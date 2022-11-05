@@ -1,0 +1,1 @@
+default_app_config = 'f_contracts.apps.FContractsConfig'

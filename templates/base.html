@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="en">
+{% load static %}
+{% load humanize %}
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<link rel="icon" href="{% static 'CAMEOSE/Images/csllogo.ico' %}">
+	<title>CAMEOSE Solutions</title>
+	<link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/jumbotron/">
+	<!-- Bootstrap core CSS -->
+	<!-- <link
+         href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+         rel="stylesheet"
+         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+         crossorigin="anonymous"
+         >     -->
+	<link href="{% static 'dist/css/bootstrap.min.css' %}" rel="stylesheet">
+	<!-- Custom styles for this template -->
+	<link href="{% static 'jumbotron/jumbotron.css' %}" rel="stylesheet"> </head>
+
+<body>
+	<nav class="navbar navbar-expand-md navbar-light fixed-top bg-light">
+		<a class="navbar-brand" href="http://127.0.0.1:8000/">Project 12345</a>
+		<button class="navbar-toggler"
+				type="button"
+				data-toggle="collapse"
+				data-target="#navbarsExampleDefault"
+				aria-controls="navbarsExampleDefault"
+				aria-expanded="false"
+				aria-label="Toggle navigation">
+			<span
+					class="navbar-toggler-icon">
+			</span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarsExampleDefault">
+			<ul class="navbar-nav mr-auto">
+				<li class="nav-item active">
+<!--					<a class="nav-link"-->
+<!--					   href="http://127.0.0.1:8000/">-->
+<!--						Home-->
+<!--						<span class="sr-only">-->
+<!--							(current)-->
+<!--						</span>-->
+<!--            		</a>-->
+				</li>
+				<li class="nav-item">
+					<a class="nav-link"
+					   href="{% url 'admin:index' %}">
+						CAMEOSE App
+					</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link"
+					   href="http://127.0.0.1:8000/n_knowledgebase/">
+						Knowledge Base
+					</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link"
+						href="https://cameose.com/"
+						target="_blank">
+						CAMEOSE Solutions
+					</a>
+				</li>
+				<!-- <li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle"
+						href="http://example.com"
+						id="dropdown01"
+						data-toggle="dropdown"
+						aria-haspopup="true"
+						aria-expanded="false">Dropdown</a>
+					<div class="dropdown-menu" aria-labelledby="dropdown01">
+					<a class="dropdown-item" href="#">Action</a>
+					<a class="dropdown-item" href="#">Another action</a>
+					<a class="dropdown-item" href="#">Something else here
+					</a></div>
+					</li> -->
+			</ul>
+			<form class="form-inline my-2 my-lg-0">
+				<input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+				<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+			</form>
+		</div>
+	</nav>
+	<main role="main">
+		<!-- Main jumbotron for a primary marketing message or call to action -->
+		<div class="jumbotron jumbotron-fluid">
+			<div class="container">
+				<h1 class="display-4"></h1> <img src="{% static 'CAMEOSE/Images/csl_logo.png' %}" class="img-fluid" alt="Responsive image">
+				<!-- <p>This is a template for a simple marketing or informational website. It
+				includes a large callout called a jumbotron and three supporting pieces of content.
+				Use it as a starting point to create something more unique.</p> -->
+				<!-- <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more &raquo;</a></p> -->
+			</div>
+		</div>
+
+<!--		<div class="container">-->
+<!--			&lt;!&ndash; Example row of columns &ndash;&gt;-->
+<!--			<div class="row">-->
+<!--				<div class="col-md-4">-->
+<!--					<h2>WORK BREAKDOWN STRUCTURES</h2>-->
+<!--					<p>Work Breakdown Structure (WBS) is akin to the skeletal system of a human being.-->
+<!--						Just as the skeletal system gives form or shape to the body and allows for the body to maintain-->
+<!--						its balance, in the same way, the WBS gives order, shape and supports the project.-->
+<!--					</p>-->
+<!--					<p>Capital projects across different business segments implement Work Breakdown Structures-->
+<!--						differently. The nature of the WBS for a highway project will be very different from that of an-->
+<!--						industrial facility. The size and costs of a project also determine the depth or the level of-->
+<!--						details in the WBS that the project may wish to drill into.-->
+<!--					</p>-->
+<!--					<p>CAMEOSE facilitates the development of a WBS for stakeholders and has its own native hierarchy-->
+<!--						to ensure that a WBS is well supported.From a construction perspective, the critical piece of-->
+<!--						information that is needed in the WBS is the "location" and "commodity code".-->
+<!--					</p>-->
+<!--					&lt;!&ndash; <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p> &ndash;&gt;-->
+<!--				</div>-->
+<!--				<div class="col-md-4">-->
+<!--					<h2>QUANTITATIVE ANALYSIS</h2>-->
+<!--					<p>Quantitative Analysis of capital projects has many aspects. It involves the knowledge of what is needed to build i.e materials, the amount of it required and the unit of measure that will be used to represent it.</p>-->
+<!--					<p>While these terms seem primitive and we have been quantifying things since creation, it is still an area where the focus is vital, as poor quantification methods and approaches on projects lead to headaches.</p>-->
+<!--					<p>Our team has solid experience in material take-offs from CAD environments, manual take-offs from drawings for the civil, mechanical, piping and electrical disciplines.</p>-->
+<!--					<p>Quantities in CAMEOSE are hosted at "Tag" levels and bound to Control Budget work packages. The tags are managed efficiently, which helps quantify different cost buckets.</p>-->
+<!--					<p>We firmly believe in this well-known industry motto; "What gets measured, gets managed!". </p>-->
+<!--					&lt;!&ndash; <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p> &ndash;&gt;-->
+<!--				</div>-->
+<!--				<div class="col-md-4">-->
+<!--					<h2>ESTIMATING</h2>-->
+<!--					<p>Our team can facilitate the creation of accurate estimates by working with known individuals in the industry.</p>-->
+<!--					<p>CAMEOSE allows for the creation of rough estimates and these come in very handy during project execution when projects realize that some estimating scopes are missing or some need to be re-evaluated.</p>-->
+<!--					<p>CAMEOSE also has the ability to organize estimates into smaller discipline-specific work packages.</p>-->
+<!--					&lt;!&ndash; <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p> &ndash;&gt;-->
+<!--				</div>-->
+<!--			</div>-->
+<!--			<hr> </div>-->
+		<!-- /container -->
+	</main>
+	<footer class="container">
+		<!-- <p>&copy; CAMEOSE Solutions Ltd.</p>-->
+		<p>Copyright © 2021 CAMEOSE Solutions Ltd. All rights reserved.</p>
+	</footer>
+	<!-- Bootstrap core JavaScript
+         ================================================== -->
+	<!-- Placed at the end of the document so the pages load faster -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+
+</html>

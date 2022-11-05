@@ -1,0 +1,1 @@
+default_app_config = 'g_measures.apps.GMeasuresConfig'

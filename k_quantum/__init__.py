@@ -1,0 +1,1 @@
+default_app_config = 'k_quantum.apps.KQuantumConfig'

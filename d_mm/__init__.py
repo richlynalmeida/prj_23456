@@ -1,0 +1,1 @@
+default_app_config = 'd_mm.apps.DMmConfig'

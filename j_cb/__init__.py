@@ -1,0 +1,1 @@
+default_app_config = 'j_cb.apps.JCbConfig'

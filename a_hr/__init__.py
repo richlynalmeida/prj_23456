@@ -1,0 +1,1 @@
+default_app_config = 'a_hr.apps.AHrConfig'
